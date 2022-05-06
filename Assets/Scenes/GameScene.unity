@@ -156,7 +156,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDrag: 2.5
+  m_LinearDrag: 1.5
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -606,6 +606,7 @@ GameObject:
   - component: {fileID: 1145641827}
   - component: {fileID: 1145641826}
   - component: {fileID: 1145641829}
+  - component: {fileID: 1145641830}
   m_Layer: 0
   m_Name: Computer_paddle
   m_TagString: Untagged
@@ -626,7 +627,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDrag: 2.5
+  m_LinearDrag: 1.5
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -725,6 +726,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1145641830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145641825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff76357d1af1d740af7f1f1f20fde11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 10
+  ball: {fileID: 1320276883}
 --- !u!1 &1219472073
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +889,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1320276880}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e9d2a3444258834c923cf8668b8a278, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

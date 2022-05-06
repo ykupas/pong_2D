@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player_paddle : paddle
+public class Player_paddle : Paddle
 {
     // Direction variable for player input
     private Vector2 _direction;
