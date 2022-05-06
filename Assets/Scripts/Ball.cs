@@ -18,6 +18,7 @@ public class Ball : MonoBehaviour
     private void Start() 
     {
         ResetPosition();    
+        AddStartingForce();
     }
 
     // Reset ball position 
@@ -26,12 +27,10 @@ public class Ball : MonoBehaviour
         // Reseting position and velocity
         _rigidbody.position = Vector3.zero;
         _rigidbody.velocity = Vector3.zero;
-        // Restart adding force
-        AddStartingForce();
     }
 
     // Adding a starting force to ball
-    private void AddStartingForce()
+    public void AddStartingForce()
     {
         // Variables for X and Y axis force
         float x;

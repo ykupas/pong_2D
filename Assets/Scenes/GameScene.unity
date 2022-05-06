@@ -342,7 +342,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 09e7180ef04875d4fbc5ab2fb7965ac9, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 300
     m_Alignment: 0
@@ -421,7 +421,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 09e7180ef04875d4fbc5ab2fb7965ac9, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 300
     m_Alignment: 2
@@ -1357,6 +1357,8 @@ MonoBehaviour:
   ball: {fileID: 1320276885}
   playerScoreText: {fileID: 345248115}
   computerScoreText: {fileID: 226741881}
+  playerPaddle: {fileID: 183761126}
+  computerPaddle: {fileID: 1145641830}
 --- !u!4 &1347783285
 Transform:
   m_ObjectHideFlags: 0

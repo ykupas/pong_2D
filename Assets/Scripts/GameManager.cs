@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     // Text reference variables
     public Text playerScoreText;
     public Text computerScoreText;
+    // Paddles reference variables
+    public Paddle playerPaddle;
+    public Paddle computerPaddle;
 
     // This is called when starts up
     private void Awake() 
@@ -36,8 +39,8 @@ public class GameManager : MonoBehaviour
         _playerScore++;
         // Updating text
         this.playerScoreText.text = _playerScore.ToString();
-        // Reset ball 
-        this.ball.ResetPosition();
+        // Reset game
+        ResetRound ();
     }
 
     // Adding Computer score
@@ -47,8 +50,18 @@ public class GameManager : MonoBehaviour
         _computerScore++;
         // Updating text
         this.computerScoreText.text = _computerScore.ToString();
-        // Reset ball 
-        this.ball.ResetPosition();
+        // Reset game
+        ResetRound();
     }
 
+    // Reset round after a point
+    public void ResetRound()
+    {
+        // Reset ball 
+        this.ball.ResetPosition();
+        this.ball.AddStartingForce();
+        // Reset Paddles
+        this.playerPaddle.ResetPosition();
+        this.computerPaddle.ResetPosition();
+    }
 }
