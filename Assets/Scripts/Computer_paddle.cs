@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Computer_paddle : paddle
+public class Computer_paddle : Paddle
 {
     // Start is called before the first frame update
     void Start()
