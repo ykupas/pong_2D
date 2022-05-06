@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class paddle : MonoBehaviour
+public class Paddle : MonoBehaviour
 {
     // Protected variable can be accessed from child classes
     protected Rigidbody2D _rigidbody;
