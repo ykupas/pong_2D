@@ -156,7 +156,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDrag: 1.5
+  m_LinearDrag: 7.5
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -241,7 +241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef66c1e212d6f44f8470f043924fec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
 --- !u!61 &183761127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -627,7 +626,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDrag: 1.5
+  m_LinearDrag: 7.5
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -738,7 +737,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff76357d1af1d740af7f1f1f20fde11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
   ball: {fileID: 1320276883}
 --- !u!1 &1219472073
 GameObject:
