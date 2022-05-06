@@ -17,7 +17,17 @@ public class Ball : MonoBehaviour
     // Start is called just after Awake
     private void Start() 
     {
-        AddStartingForce();    
+        ResetPosition();    
+    }
+
+    // Reset ball position 
+    public void ResetPosition()
+    {
+        // Reseting position and velocity
+        _rigidbody.position = Vector3.zero;
+        _rigidbody.velocity = Vector3.zero;
+        // Restart adding force
+        AddStartingForce();
     }
 
     // Adding a starting force to ball
@@ -51,4 +61,6 @@ public class Ball : MonoBehaviour
     {
         _rigidbody.AddForce(force);
     }
+
+
 }

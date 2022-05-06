@@ -18,6 +18,5 @@ public class Bouncy_suface : MonoBehaviour
             // Add normal opposite force to ball
             ball.AddForce(-normal * this._bounceStrength);
         }
-
     }
 }
