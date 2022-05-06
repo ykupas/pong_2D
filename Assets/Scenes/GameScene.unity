@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 183761123}
   - component: {fileID: 183761127}
   - component: {fileID: 183761126}
+  - component: {fileID: 183761128}
   m_Layer: 0
   m_Name: Player_paddle
   m_TagString: Untagged
@@ -267,6 +268,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &183761128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183761122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226e816d02b6354409f1c261753fcaa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bounceStrength: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,6 +620,7 @@ GameObject:
   - component: {fileID: 1145641826}
   - component: {fileID: 1145641829}
   - component: {fileID: 1145641830}
+  - component: {fileID: 1145641831}
   m_Layer: 0
   m_Name: Computer_paddle
   m_TagString: Untagged
@@ -738,6 +753,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1320276883}
+--- !u!114 &1145641831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145641825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226e816d02b6354409f1c261753fcaa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bounceStrength: 10
 --- !u!1 &1219472073
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,6 +954,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1369465441}
   - component: {fileID: 1369465440}
+  - component: {fileID: 1369465442}
   m_Layer: 0
   m_Name: Bottom_wall
   m_TagString: Untagged
@@ -973,6 +1002,19 @@ Transform:
   m_Father: {fileID: 1219472074}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1369465442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369465439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226e816d02b6354409f1c261753fcaa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bounceStrength: 20
 --- !u!1 &1688205238
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,6 +1025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1688205240}
   - component: {fileID: 1688205239}
+  - component: {fileID: 1688205241}
   m_Layer: 0
   m_Name: Top_wall
   m_TagString: Untagged
@@ -1030,3 +1073,16 @@ Transform:
   m_Father: {fileID: 1219472074}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1688205241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688205238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226e816d02b6354409f1c261753fcaa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bounceStrength: 20
