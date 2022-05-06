@@ -6,7 +6,7 @@ public class Paddle : MonoBehaviour
     protected Rigidbody2D _rigidbody;
     
     // Paddle speed variable
-    public float _speed = 10.0f;
+    protected float _speed = 15.0f;
 
     // Awake is called one time, for initialization
     private void Awake() 

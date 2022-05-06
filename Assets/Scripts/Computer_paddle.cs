@@ -21,17 +21,17 @@ public class Computer_paddle : Paddle
                 _rigidbody.AddForce(Vector2.down * this._speed);
             }
         }
-        // else
-        // {
-        //     // Go back to 0 point if ball is going to player paddle
-        //     if(this.transform.position.y > 0.0f)
-        //     {
-        //         _rigidbody.AddForce(Vertor2.down * this._speed);
-        //     }
-        //     else if(this.transform.position.y < 0.0f)
-        //     {
-        //         _rigidbody.AddForce(Vertor2.up * this._speed);
-        //     }
-        // }
+        else
+        {
+            // Go back to 0 point if ball is going to player paddle
+            if(this.transform.position.y > 0.0f)
+            {
+                _rigidbody.AddForce(Vector2.down * this._speed);
+            }
+            else if(this.transform.position.y < 0.0f)
+            {
+                _rigidbody.AddForce(Vector2.up * this._speed);
+            }
+        }
     }
 }
